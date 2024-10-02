@@ -39,7 +39,7 @@ const Header = () => {
                 </button>
                 <ul className="hidden lg:flex space-x-6">
                     <li><a href="#features" className="hover:text-blue-500">Features</a></li>
-                    <li><a href="#contact" className="hover:text-blue-500">Agenda</a></li>
+                    <li><a href="#agenda" className="hover:text-blue-500">Agenda</a></li>
                     <li><a href="#speaker" className="hover:text-blue-500">Speaker</a></li>
                     <li><a href="#contest" className="hover:text-blue-500">Contest</a></li>
                     <li><a href="#venue" className="hover:text-blue-500">Venue</a></li>
