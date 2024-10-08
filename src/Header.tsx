@@ -1,5 +1,6 @@
 
 import React, { useState } from "react"
+import HeaderImage from "./images/WordmarkSince1924Color.png"
 
 
 const Header = () => {
@@ -22,9 +23,15 @@ const Header = () => {
         }
     }
     return (
-        <header className="bg-white shadow fixed top-0 left-0 right-0 z-10">
+        <header className="bg-white w-full shadow fixed top-0 left-0 right-0 z-10">
             <nav className="container mx-auto px-4 py-6 flex justify-between items-center">
-                <div className="text-2xl font-bold">Toastmasters District 80</div>
+                <div>
+                    <img src={HeaderImage}
+                        className="left-0 w-full h-24 object-cover"
+                        alt="background"
+                    />
+
+                </div>
                 <button className="lg:hidden" id="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" onClick={toggleMobileMenu}>
                     {
                         istoggle ?
@@ -47,7 +54,7 @@ const Header = () => {
                     <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
                 </ul>
             </nav>
-            <div className="lg:hidden bg-yellow-300 " id="mobile-menu" >
+            <div className="lg:hidden" id="mobile-menu" >
                 <ul className="flex  mr-10 flex-col space-y-3 items-end " >
                     <li><a href="#features" className="hover:text-blue-500" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Features</a></li>
                     <li><a href="#contact" className="hover:text-blue-500" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Agenda</a></li>

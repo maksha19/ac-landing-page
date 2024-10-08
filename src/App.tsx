@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen  min-w-screen bg-gray-100">
       <Header />
       <Body />
       <Footer />
