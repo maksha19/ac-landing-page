@@ -26,11 +26,11 @@ const FullWidthHeightImage = () => {
                 <div className='mt-10 flex flex-col items-center md:space-y-4 space-y-6 w-full'>
                     <div style={{ fontFamily: "Great Vibes, cursive", fontSize: "30px" }}
                         className="text-white font-bold text-xl md:text-3xl">
-                        Join hands to celebrate
+                        Let’s celebrate
                     </div>
                     <div style={{ fontFamily: "Arial, sans-serif" }}
-                        className="text-white font-bold text-3xl md:text-6xl uppercase w-screen text-center ">
-                        The Power of Connection
+                        className="text-white font-bold text-3xl md:text-6xl uppercase w-screen text-center p-1 ">
+                        Our Hands Of Friendship
                     </div>
                 </div>
             </div>

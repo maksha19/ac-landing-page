@@ -13,7 +13,7 @@ const Speaker = () => {
                     alt="background"
                 />
                 <div id='key-note' className='absolute top-0 left-0 pl-1 md:p-8 bg-black bg-opacity-5  h-full w-[40%] flex flex-col items-center justify-center'>
-                    <p style={{ fontFamily: "Great Vibes, cursive" }} className="text-white text-xl md:text-6xl">Meet- Verity Price </p>
+                    <p style={{ fontFamily: "Great Vibes, cursive" }} className="text-white text-xl md:text-6xl">Verity Price </p>
                     <p className="text-white md:text-2xl mt-4">The First speaker from Africa and 6th Woman in history to ever win the World Championship of Public Speaking.</p>
                     <p className="hidden md:block text-white text-2xl mt-4">From being a professional singer to becoming a professional speaker and facilitator, Verity has over 15 years of experience inspiring audiences around the world.</p>
                     <p className="hidden md:block text-white text-2xl mt-4">When she's not dazzling on conference stages, she is passionately helping organizations and individuals transform their presenting skills.</p>
