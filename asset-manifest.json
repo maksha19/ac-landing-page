@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ac-landing-page/static/css/main.f9777339.css",
-    "main.js": "/ac-landing-page/static/js/main.874c08c5.js",
+    "main.css": "/ac-landing-page/static/css/main.f55fa256.css",
+    "main.js": "/ac-landing-page/static/js/main.448c9fad.js",
     "static/js/453.e9f7c7a8.chunk.js": "/ac-landing-page/static/js/453.e9f7c7a8.chunk.js",
     "static/media/verity_Price.jpg": "/ac-landing-page/static/media/verity_Price.62485a7fd0e53da6c4a4.jpg",
     "static/media/hero_image.png": "/ac-landing-page/static/media/hero_image.edd71aa3fa38f511d600.png",
@@ -9,12 +9,12 @@
     "static/media/district_logo.png": "/ac-landing-page/static/media/district_logo.cf4b1289eb3f22d9aabc.png",
     "static/media/WordmarkSince1924Color.png": "/ac-landing-page/static/media/WordmarkSince1924Color.88fee5a5d4f64ebcf828.png",
     "index.html": "/ac-landing-page/index.html",
-    "main.f9777339.css.map": "/ac-landing-page/static/css/main.f9777339.css.map",
-    "main.874c08c5.js.map": "/ac-landing-page/static/js/main.874c08c5.js.map",
+    "main.f55fa256.css.map": "/ac-landing-page/static/css/main.f55fa256.css.map",
+    "main.448c9fad.js.map": "/ac-landing-page/static/js/main.448c9fad.js.map",
     "453.e9f7c7a8.chunk.js.map": "/ac-landing-page/static/js/453.e9f7c7a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9777339.css",
-    "static/js/main.874c08c5.js"
+    "static/css/main.f55fa256.css",
+    "static/js/main.448c9fad.js"
   ]
 }
