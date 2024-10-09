@@ -9,14 +9,14 @@ const Header = () => {
     const toggleMobileMenu = () => {
         const mobileMenu = document.getElementById('mobile-menu');
         if (mobileMenu?.classList.contains('hidden')) {
-            mobileMenu.style.animation = 'slide-in-right 0.2s ease-in-out forwards';
+            mobileMenu.style.animation = 'slide-in-right 0s ease-in-out forwards';
             mobileMenu.classList.remove('hidden');
             setIstoggle(true)
 
         } else {
             if (mobileMenu) {
                 mobileMenu?.classList.add('animate-slide-out-right');
-                mobileMenu.style.animation = 'slide-out-right 0.3s ease-in-out forwards';
+                mobileMenu.style.animation = 'slide-out-right 0s ease-in-out forwards';
                 setIstoggle(false)
             }
             mobileMenu?.classList.add('hidden')
@@ -56,13 +56,14 @@ const Header = () => {
             </nav>
             <div className="lg:hidden" id="mobile-menu" >
                 <ul className="flex  mr-10 flex-col space-y-3 items-end " >
-                    <li><a href="#features" className="hover:text-blue-500" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Features</a></li>
-                    <li><a href="#contact" className="hover:text-blue-500" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Agenda</a></li>
-                    <li><a href="#speaker" className="hover:text-blue-500" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Speaker</a></li>
-                    <li><a href="#contest" className="hover:text-blue-500" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Contest</a></li>
-                    <li><a href="#venue" className="hover:text-blue-500" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Venue</a></li>
-                    <li><a href="#team" className="hover:text-blue-500" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Team</a></li>
-                    <li><a href="#contact" className="hover:text-blue-500" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Contact</a></li>
+                    <li><a href="#features" className="hover:text-blue-500 p-2" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Features</a></li>
+                    <li><a href="#contact" className="hover:text-blue-500 p-2" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Agenda</a></li>
+                    <li><a href="#speaker" className="hover:text-blue-500 p-2" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Speaker</a></li>
+                    <li><a href="#contest" className="hover:text-blue-500 p-2" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Contest</a></li>
+                    <li><a href="#venue" className="hover:text-blue-500 p-2" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Venue</a></li>
+                    <li><a href="#team" className="hover:text-blue-500 p-2" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Team</a></li>
+                    <li><a href="#contact" className="hover:text-blue-500 p-2" onClick={() => setTimeout(() => toggleMobileMenu(), 50)}>Contact</a></li>
+                    <li></li>
                 </ul>
             </div>
         </header>
