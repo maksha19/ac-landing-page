@@ -43,7 +43,7 @@ const Body = () => {
     return (
         <div className="mx-auto">
             {/* Hero Section */}
-            <section className="mt-20 w-full pb-10" id="hero">
+            <section className="mt-20 w-full pb-10" id="Home">
                 <FullWidthHeightImage />
             </section>
             <section className='container mx-auto px-4 w-screen'>
