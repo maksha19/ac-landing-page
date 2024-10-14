@@ -2,7 +2,7 @@ import React from 'react';
 import ac_poster from "./images/hero_image.png";
 import district_Logo from "./images/district_logo.png";
 import Contact from './components/Contact'
-import Agenta from './components/Agenta';
+import Agenda from './components/Agenta';
 import Venue from './components/Venue';
 import Speaker from './components/Speaker';
 
@@ -48,7 +48,7 @@ const Body = () => {
             </section>
             <section className='container mx-auto px-4 w-screen'>
                 <section className='mt-20' id="agenda">
-                    <Agenta />
+                    <Agenda />
                 </section>
                 <section className='mt-20' id="agenda">
                     <Speaker />
