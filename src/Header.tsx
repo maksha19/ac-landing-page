@@ -41,7 +41,7 @@ const Header = () => {
                     />
 
                 </div>
-                <button className="lg:hidden" id="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" onClick={() => toggleMobileMenu()}>
+                <button className="lg:hidden pr-4" id="menu-toggle" aria-expanded="false" aria-label="Toggle navigation" onClick={() => toggleMobileMenu()}>
                     {
                         istoggle ?
                             <svg className="fill-current" width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -53,9 +53,9 @@ const Header = () => {
 
                     }
                 </button>
-                <ul className="hidden lg:flex space-x-6">
+                <ul style={{ fontFamily: "Franklin" }} className="hidden lg:flex space-x-6">
                     <li><a href="#Home" className="hover:text-blue-500">Home</a></li>
-                    <li><a href="#agenda" className="hover:text-blue-500">Agenda</a></li>
+                    <li><a href="#agenda" className="hover:text-blue-500">Program</a></li>
                     <li><a href="#speaker" className="hover:text-blue-500">Speaker</a></li>
                     {/* <li><a href="#contest" className="hover:text-blue-500">Contest</a></li> */}
                     <li><a href="#venue" className="hover:text-blue-500">Venue</a></li>
@@ -63,10 +63,10 @@ const Header = () => {
                     <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
                 </ul>
             </nav>
-            <div className={`lg:hidden  ${istoggle ? 'hidden' : 'block'}`} id="mobile-menu" >
+            <div style={{ fontFamily: "Franklin" }} className={`lg:hidden  ${istoggle ? 'hidden' : 'block'}`} id="mobile-menu" >
                 <ul className="flex  mr-10 flex-col space-y-3 items-end " >
                     <li><a href="#Home" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Home</a></li>
-                    <li><a href="#agenda" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Agenda</a></li>
+                    <li><a href="#agenda" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Program</a></li>
                     <li><a href="#speaker" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Speaker</a></li>
                     {/* <li><a href="#contest" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Contest</a></li> */}
                     <li><a href="#venue" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Venue</a></li>

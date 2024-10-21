@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -39,4 +40,8 @@ code {
 .cls-1 {
   fill: #fff;
   stroke-width: 0px;
+}
+
+.Franklin {
+  font-family: 'Franklin Gothic Medium'
 }

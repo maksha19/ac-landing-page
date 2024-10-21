@@ -1,5 +1,5 @@
 import React from 'react';
-import ac_poster from "./images/hero_image.png";
+import ac_poster from "./images/s2.webp";
 import district_Logo from "./images/district_logo.png";
 import Contact from './components/Contact'
 import Agenda from './components/Agenta';
@@ -8,29 +8,34 @@ import Speaker from './components/Speaker';
 
 const FullWidthHeightImage = () => {
     return (
-        <div className="flex">
+        <div className="flex h-auto px-4">
             <img
                 src={ac_poster}
-                className="left-0 md:w-screen h-[700px] m-0"
+                className="left-0 md:w-screen md:h-[900px] h-[450px] m-0"
                 alt="background"
             />
-            <div id='hero-text' className='absolute mt-40 left-1/2 transform -translate-x-1/2 flex flex-col items-center'>
+            <div id='hero-text' className='absolute mt-24 md:mt-96 left-1/2 transform -translate-x-1/2 flex flex-col items-center '>
                 <img
                     src={district_Logo}
                     className="w-28 h-30"
                     alt="background"
                 />
-                <div className="text-white font-bold text-3xl md:text-5xl mt-2 text-center ">
+                <div style={{ fontFamily: "Franklin" }} className="text-white font-bold text-3xl md:text-5xl mt-2 text-center ">
                     Toastmasters District 80 Annual Conference 2025
                 </div>
                 <div className='mt-10 flex flex-col items-center md:space-y-4 space-y-6 w-full'>
-                    <div style={{ fontFamily: "Great Vibes, cursive", fontSize: "30px" }}
-                        className="text-white font-bold text-xl md:text-3xl">
-                        Let’s celebrate
+                    <div style={{ fontFamily: "Corinthia" }}
+                        className="text-white font-bold text-3xl md:text-6xl">
+                        Let's celebrate
                     </div>
-                    <div style={{ fontFamily: "Arial, sans-serif" }}
+                    <div style={{ fontFamily: "Franklin" }}
                         className="text-white font-bold text-3xl md:text-6xl uppercase w-screen text-center p-1 ">
                         Our Hands Of Friendship
+                    </div>
+                    <div style={{ fontFamily: "Franklin" }} id='description'
+                        className="text-white font-bold text-xl md:max-w-[500px] w-screen text-center p-1">
+                        dadasd
+                        {/* <p>Singapore, a melting pot of cultures, traditions, and ideas hosts an Annual Conference in service of witnessing and celebrating the best that District 80 has to offer. To complement the battle between our best oratory gladiators, world champion public speakers and regarded trainers have for you workshops and rivetting conversation. Not only does the conference provide the occasion the pomp and circumstance it deserves, but it also aspires to bring together friends and intellectuals from around the Toastmasterverse to forge new friendships!</p> */}
                     </div>
                 </div>
             </div>
@@ -41,12 +46,14 @@ const FullWidthHeightImage = () => {
 
 const Body = () => {
     return (
-        <div className="mx-auto">
-            {/* Hero Section */}
-            <section className="mt-20 w-full pb-10" id="Home">
-                <FullWidthHeightImage />
-            </section>
-            <section className='container mx-auto px-4 w-screen'>
+        <div className="">
+            <section className='container mx-auto w-screen'>
+                <section className="mt-20 w-full pb-10" id="Home">
+                    <FullWidthHeightImage />
+                </section>
+                <section className='mt-20' id="agenda">
+                    <Agenda />
+                </section>
                 <section className='mt-20' id="agenda">
                     <Agenda />
                 </section>
