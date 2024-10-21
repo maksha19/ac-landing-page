@@ -5,7 +5,7 @@ const Speaker = () => {
 
     return (
         <div className='px-4'>
-            <section className="py-20" id="speaker">
+            <section className="py-10" id="speaker">
                 <div style={{ fontFamily: "Franklin" }}
                     className=" mb-8 font-bold text-3xl md:text-5xl uppercase w-full text-center p-1 ">
                     Our KeyNote Speakers

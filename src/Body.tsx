@@ -5,6 +5,8 @@ import Contact from './components/Contact'
 import Agenda from './components/Agenta';
 import Venue from './components/Venue';
 import Speaker from './components/Speaker';
+import About from './components/About';
+import Hotel from './components/Hotel';
 
 const FullWidthHeightImage = () => {
     return (
@@ -23,7 +25,7 @@ const FullWidthHeightImage = () => {
                 <div style={{ fontFamily: "Franklin" }} className="text-white font-bold text-3xl md:text-5xl mt-2 text-center ">
                     Toastmasters District 80 Annual Conference 2025
                 </div>
-                <div className='mt-10 flex flex-col items-center md:space-y-4 space-y-6 w-full'>
+                <div className='mt-10 flex flex-col items-center md:space-y-4 space-y-4 w-full'>
                     <div style={{ fontFamily: "Corinthia" }}
                         className="text-white font-bold text-3xl md:text-6xl">
                         Let's celebrate
@@ -34,7 +36,6 @@ const FullWidthHeightImage = () => {
                     </div>
                     <div style={{ fontFamily: "Franklin" }} id='description'
                         className="text-white font-bold text-xl md:max-w-[500px] w-screen text-center p-1">
-                        dadasd
                         {/* <p>Singapore, a melting pot of cultures, traditions, and ideas hosts an Annual Conference in service of witnessing and celebrating the best that District 80 has to offer. To complement the battle between our best oratory gladiators, world champion public speakers and regarded trainers have for you workshops and rivetting conversation. Not only does the conference provide the occasion the pomp and circumstance it deserves, but it also aspires to bring together friends and intellectuals from around the Toastmasterverse to forge new friendships!</p> */}
                     </div>
                 </div>
@@ -48,23 +49,26 @@ const Body = () => {
     return (
         <div className="">
             <section className='container mx-auto w-screen'>
-                <section className="mt-20 w-full pb-10" id="Home">
+                <section className="mt-20 w-full" id="Home">
                     <FullWidthHeightImage />
                 </section>
-                <section className='mt-20' id="agenda">
+                <section className='' id="about">
+                    <About />
+                </section>
+                <section className='' id="agenda">
                     <Agenda />
                 </section>
-                <section className='mt-20' id="agenda">
-                    <Agenda />
-                </section>
-                <section className='mt-20' id="agenda">
+                <section className='' id="agenda">
                     <Speaker />
                 </section>
                 <section id='venue' className='w-full '>
                     <Venue />
                 </section>
+                <section className="py-10" id="hotel">
+                    <Hotel />
+                </section>
                 {/* Contact Section */}
-                <section className="py-20" id="contact">
+                <section className="pb-10" id="contact">
                     <Contact />
                 </section>
 
