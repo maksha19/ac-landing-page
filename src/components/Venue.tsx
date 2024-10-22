@@ -26,20 +26,6 @@ const Venue = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="md:flex md:flex-col" id="hotel">
-                        <div style={{ fontFamily: "Franklin" }}
-                            className="mb-4 font-bold text-xl md:text-3xl uppercase w-full text-center p-1 ">
-                            Hotel information
-                        </div>
-                        <div className="flex flex-row space-x-4 mt-4 justify-center">
-                            <a href="https://one15marina.com/hotel/overview/" target="_blank" rel="noopener noreferrer">
-                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">one15marina</button>
-                            </a>
-                            <a href="https://all.accor.com/hotel/C266/index.en.shtml?utm_campaign=seo+maps&utm_medium=seo+maps&utm_source=bing+maps" target="_blank" rel="noopener noreferrer">
-                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Hotel Faber Park</button>
-                            </a>
-                        </div>
-                    </div>
                 </div>
 
             </div>
