@@ -2,7 +2,7 @@ name: deploy AC website
 
 on: 
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   thayam:
