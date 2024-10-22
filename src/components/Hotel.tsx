@@ -16,7 +16,7 @@ const Hotel = () => {
                     </a>
                 </div>
                 <div className="md:ml-48">
-                    <h2 className="text-2xl flex  uppercase font-bold mb-4">Hotel Faber Park</h2>
+                    <h2 className="text-2xl flex  uppercase font-bold mb-4">Faber Park</h2>
                     <p>Our hotel offers easy access to VivoCity and Sentosa Island, a playground of entertainment and adventure.</p>
                     <p className="mt-4">Normal Price: S$330</p>
                     <p>Offer Price: S$175 (Only for AC 2025 - Registerd Members, Please reachout us for coupon before booking)</p>

@@ -31,7 +31,7 @@ const FullWidthHeightImage = () => {
                         Let's celebrate
                     </div>
                     <div style={{ fontFamily: "Franklin" }}
-                        className="text-white font-bold text-3xl md:text-6xl uppercase w-screen text-center p-1 ">
+                        className="text-white font-bold text-2xl md:text-6xl uppercase w-screen text-center p-1 ">
                         Our Hands Of Friendship
                     </div>
                     <div style={{ fontFamily: "Franklin" }} id='description'
