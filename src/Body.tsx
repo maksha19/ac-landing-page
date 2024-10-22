@@ -67,7 +67,6 @@ const Body = () => {
                 <section className="py-10" id="hotel">
                     <Hotel />
                 </section>
-                {/* Contact Section */}
                 <section className="pb-10" id="contact">
                     <Contact />
                 </section>
