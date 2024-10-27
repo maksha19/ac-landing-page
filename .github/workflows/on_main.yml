@@ -24,7 +24,7 @@ jobs:
        run: |
          cd build
          echo > .nojekyll
-         echo 'www.district80ac2025.com' > CNAME
+         echo 'district80ac2025.com' > CNAME
          git init
          git add -A
          git config --local user.email "action@github.com"
