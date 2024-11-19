@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from "axios";
 
 const Form = () => {
     // State to store form values
@@ -15,6 +16,12 @@ const Form = () => {
         fileMimeType: ''
     }
     const [formValues, setFormValues] = useState(formInitialValues);
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const [modelStatements, setModelStatements] = useState("")
+
+    const openModal = () => setIsOpen(true);
+    const closeModal = () => setIsOpen(false);
 
     // Handle input change
     const handleChange = (e: any) => {
@@ -33,7 +40,7 @@ const Form = () => {
                 setFormValues({
                     ...formValues,
                     fileName: file.name,
-                    fileData: reader.result as string,
+                    fileData: (reader.result as string).split(",")[1],
                     fileMimeType: file.type,
                 });
             };
@@ -45,26 +52,34 @@ const Form = () => {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         console.log('Form Submitted:', formValues);
+        setIsFormSubmitted(true);
         const url = "https://script.google.com/macros/s/AKfycbz48KDxYGkHlJpuXCqLJxo3EYf8tOVYsF8rUnvCTG_7mJr2CFfdOJiMZcEibqs1fweE4A/exec";
 
         try {
-            const response = await fetch(url, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formValues),
-            });
-
-            const result = await response.json();
+            const response = await axios.post(
+                url,
+                { ...formValues, },
+                {
+                    headers: {
+                        "Content-Type": "text/plain;charset=utf-8",
+                    },
+                }
+            );
+            const result = await response.data;
             if (result.status === "success") {
-                alert("Form submitted successfully!");
                 setFormValues(formInitialValues);
+                openModal();
+                setModelStatements("Form submitted successfully!")
             } else {
                 console.log("Failed to submit", `: ${result.message}`);
-                alert("Please try again. Or contact us");
+                setModelStatements("Failed to submit")
             }
         } catch (error) {
             console.error("Error submitting form:", error);
-            alert("Please try again. Or contact us");
+            openModal();
+            setModelStatements("Failed to submit")
+        } finally {
+            setIsFormSubmitted(false);
         }
     };
 
@@ -278,6 +293,7 @@ const Form = () => {
                                 value="oneDay"
                                 onChange={handleChange}
                                 className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                                checked={formValues.discoverSingapore === 'oneDay'}
                             />
                             <label htmlFor="oneDay" className="text-sm font-medium text-gray-700">
                                 Join the 1-Day Tour only
@@ -291,6 +307,7 @@ const Form = () => {
                                 value="chapterMeeting"
                                 onChange={handleChange}
                                 className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                                checked={formValues.discoverSingapore === 'chapterMeeting'}
                             />
                             <label htmlFor="chapterMeeting" className="text-sm font-medium text-gray-700">
                                 Attend Toastmasters Chapter Meeting only
@@ -304,6 +321,7 @@ const Form = () => {
                                 value="joinBoth"
                                 onChange={handleChange}
                                 className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                                checked={formValues.discoverSingapore === 'joinBoth'}
                             />
                             <label htmlFor="joinBoth" className="text-sm font-medium text-gray-700">
                                 Join Both
@@ -317,21 +335,55 @@ const Form = () => {
                                 value="outofBoth"
                                 onChange={handleChange}
                                 className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                                checked={formValues.discoverSingapore === 'outofBoth'}
                             />
                             <label htmlFor="outofBoth" className="text-sm font-medium text-gray-700">
                                 Opt-Out of Both
                             </label>
                         </div>
                     </div>
-                    <button
-                        type="submit"
-                        disabled={!formValues.fileName}
-                        className={`w-full py-2 px-4 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${!formValues.fileName && "disabled:opacity-50 disabled:cursor-not-allowed"}`}
-                    >
-                        Submit
-                    </button>
+                    {
+                        isFormSubmitted ? <>
+                            <button
+                                type="button"
+                                className="w-full py-2 px-4 bg-gray-200 text-gray-800 font-semibold rounded hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                                disabled
+                            >
+                                <svg className="animate-spin h-5 w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                Submitting...
+                            </button></>
+                            :
+                            <>
+                                <button
+                                    type="submit"
+                                    disabled={!formValues.fileName}
+                                    className={`w-full py-2 px-4 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${!formValues.fileName && "disabled:opacity-50 disabled:cursor-not-allowed"}`}
+                                >
+                                    Submit
+                                </button>
+                            </>
+                    }
                 </form>
             </section>
+            {isOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white rounded-lg shadow-lg p-6 w-11/12 max-w-md">
+                        <h2 className="text-xl font-semibold text-gray-800 mb-4">{modelStatements}</h2>
+                        {modelStatements.includes("Failed") && <p className="text-gray-600">Please try again or contact us</p>}
+                        <div className="mt-6 flex justify-end">
+                            <button
+                                onClick={closeModal}
+                                className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none"
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
