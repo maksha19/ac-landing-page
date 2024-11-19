@@ -6,6 +6,13 @@
 }
 
 @font-face {
+    font-family: 'CorinthiaRegular';
+    src: url('./fonts/Corinthia/Corinthia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Franklin';
     src: url('./fonts/Franklin/Franklin\ Gothic\ Medium\ Cond\ Regular.ttf') format('truetype');
     font-weight: normal;

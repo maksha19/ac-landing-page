@@ -7,6 +7,7 @@ import Venue from './components/Venue';
 import Speaker from './components/Speaker';
 import About from './components/About';
 import Hotel from './components/Hotel';
+import Form from './components/Form';
 
 const FullWidthHeightImage = () => {
     return (
@@ -60,6 +61,9 @@ const Body = () => {
                 </section>
                 <section className='' id="agenda">
                     <Speaker />
+                </section>
+                <section className='' id="registration">
+                    <Form />
                 </section>
                 <section id='venue' className='w-full '>
                     <Venue />

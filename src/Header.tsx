@@ -57,7 +57,7 @@ const Header = () => {
                     <li><a href="#Home" className="hover:text-blue-500">Home</a></li>
                     <li><a href="#agenda" className="hover:text-blue-500">Program</a></li>
                     <li><a href="#speaker" className="hover:text-blue-500">Speaker</a></li>
-                    {/* <li><a href="#contest" className="hover:text-blue-500">Contest</a></li> */}
+                    <li><a href="#registration" className="hover:text-blue-500">Registration</a></li>
                     <li><a href="#venue" className="hover:text-blue-500">Venue</a></li>
                     <li><a href="#hotel" className="hover:text-blue-500 p-2">Hotel</a></li>
                     {/* <li><a href="#team" className="hover:text-blue-500">Team</a></li> */}
@@ -71,7 +71,7 @@ const Header = () => {
                     <li><a href="#Home" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Home</a></li>
                     <li><a href="#agenda" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Program</a></li>
                     <li><a href="#speaker" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Speaker</a></li>
-                    {/* <li><a href="#contest" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Contest</a></li> */}
+                    <li><a href="#registration" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Registration</a></li>
                     <li><a href="#venue" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Venue</a></li>
                     <li><a href="#hotel" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Hotel</a></li>
                     {/* <li><a href="#team" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Team</a></li> */}
