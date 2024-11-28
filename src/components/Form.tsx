@@ -178,13 +178,13 @@ const Form = () => {
 
                             <b>Fee Information:</b><br /><br />
 
-                            <b>Group Fee:  S$288 per person</b> (regular price: S$520 per person)Offer valid until 30 November 2024,  or until sold out. <span className="text-red-600">*</span>
+                            <b>Group Fee: S$288 per person </b> (regular price: S$520 per person) Offer valid until 30 November 2024, or until sold out.<span className="text-red-600">*</span>
                         </label>
                         <input
                             type="text"
                             id="feeInfo"
                             name="feeInfo"
-                            placeholder="Your answer"
+                            placeholder="please input group fee under this category"
                             value={formValues.feeInfo}
                             onChange={handleChange}
                             required
@@ -245,7 +245,7 @@ const Form = () => {
                     <div className="flex flex-col">
                         <label htmlFor="paymentDetails" className="text-sm font-medium text-gray-700">
                             <b>To complete your registration, please enter the amount, make the payment, and upload the payment receipt.</b><br /><br />
-                            <b>Individual Fee: S$288 per person</b> (regular price: S$520 per person) Offer valid until 30 November 2024, or until sold out.<br /><br />
+                            <b>Individual Fee: S$288 per person </b> (regular price: S$520 per person) Offer valid until 30 November 2024, or until sold out.<br /><br />
                             <b>Important:</b> All fees are non-refundable. <br /><br />
                             By completing registration, you agree to our general indemnity policy,
                             absolving the organisers of liability for any damages or losses during the event.<br /><br />
@@ -275,12 +275,12 @@ const Form = () => {
                     <hr className="my-4 border-t-4 border-gray-300" />
                     <div className="flex flex-col">
                         <label htmlFor="discoverSingapore" className="text-sm font-medium text-gray-700">
-                            <b>We’re thrilled to offer two exclusive experiences crafted  for our guests:</b><br /><br />
+                            <b>We’re thrilled to offer two meticulously crafted experiences to our guests:</b><br /><br />
                             <b>Option 1: Discover Singapore in a Day!</b><br />
-                            Join us for a unique 1-day tour around Singapore’s iconic sights!<br /><br />
-                            <b>Experience Singapore's Best:</b> From lush gardens to bustling markets, see the sights that make Singapore special.<br /><br />
-                            <b>Deeply Customized for You:</b> Tailored to your interests and guided by local experts.<br /><br />
-                            <b>Toastmasters Connections:</b> Accompanied by fellow Singaporean Toastmasters volunteers, ready to share insights into the city's culture and history.<br /><br />
+                            Join us for a unique 1-day tour of Singapore’s iconic sights!<br /><br />
+                            <b>Experience Singapore's Best:</b> From lush gardens to bustling markets, the Merlion city has much to offer!<br /><br />
+                            <b>Customized for You:</b> Tailored to your interests, shouldered by local guides<br /><br />
+                            <b>Toastmasters Connections:</b> Accompanied by fellow Singaporean Toastmasters volunteers, with insights into the city's culture and history worn on their sleeves.<br /><br />
                             <i>Note: Transportation, entry tickets, food, and beverages will be at your own expense.</i><br /><br /><br />
                             <b>Option 2: Attend a Local Toastmasters Chapter Meeting</b><br />
                             For a more immersive experience, join a local Toastmasters chapter meeting, meet members, and see how we support each other in Singapore.<br />
