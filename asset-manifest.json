@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.96dcdc29.css",
+    "main.js": "/static/js/main.076ffc43.js",
+    "static/js/453.e9f7c7a8.chunk.js": "/static/js/453.e9f7c7a8.chunk.js",
+    "static/media/verity_Price.jpg": "/static/media/verity_Price.62485a7fd0e53da6c4a4.jpg",
+    "static/media/location.png": "/static/media/location.43be70052f810e3d81bb.png",
+    "static/media/Corinthia-Regular.ttf": "/static/media/Corinthia-Regular.94de1c427de8c6026022.ttf",
+    "static/media/Corinthia-Bold.ttf": "/static/media/Corinthia-Bold.f4fba4e70107558ec81e.ttf",
+    "static/media/Franklin Gothic Medium Cond Regular.ttf": "/static/media/Franklin Gothic Medium Cond Regular.479d3b45efb5f5e38999.ttf",
+    "static/media/s2.webp": "/static/media/s2.84eda298cfce35eee6df.webp",
+    "static/media/district_logo.png": "/static/media/district_logo.cf4b1289eb3f22d9aabc.png",
+    "static/media/WordmarkSince1924Color.png": "/static/media/WordmarkSince1924Color.88fee5a5d4f64ebcf828.png",
+    "index.html": "/index.html",
+    "main.96dcdc29.css.map": "/static/css/main.96dcdc29.css.map",
+    "main.076ffc43.js.map": "/static/js/main.076ffc43.js.map",
+    "453.e9f7c7a8.chunk.js.map": "/static/js/453.e9f7c7a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96dcdc29.css",
+    "static/js/main.076ffc43.js"
+  ]
+}
