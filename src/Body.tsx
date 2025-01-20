@@ -8,6 +8,7 @@ import Speaker from './components/Speaker';
 import About from './components/About';
 import Hotel from './components/Hotel';
 import Form from './components/Form';
+import Sponsor from './components/Sponsor';
 
 const FullWidthHeightImage = () => {
     return (
@@ -70,6 +71,9 @@ const Body = () => {
                 </section>
                 <section className="py-10" id="hotel">
                     <Hotel />
+                </section>
+                <section className="py-10" id="sponsor">
+                    <Sponsor />
                 </section>
                 <section className="pb-10" id="contact">
                     <Contact />

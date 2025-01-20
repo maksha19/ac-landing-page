@@ -61,6 +61,7 @@ const Header = () => {
                     <li><a href="#venue" className="hover:text-blue-500">Venue</a></li>
                     <li><a href="#hotel" className="hover:text-blue-500 p-2">Hotel</a></li>
                     {/* <li><a href="#team" className="hover:text-blue-500">Team</a></li> */}
+                    <li><a href="#hotel" className="hover:text-blue-500 p-2">Sponsor</a></li>
                     <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
                     <li><a target='_blank' rel="noreferrer" href="https://www.visitsingapore.com/" className="hover:text-blue-500">Visit Singapore</a></li>
 
@@ -75,6 +76,7 @@ const Header = () => {
                     <li><a href="#venue" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Venue</a></li>
                     <li><a href="#hotel" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Hotel</a></li>
                     {/* <li><a href="#team" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Team</a></li> */}
+                    <li><a href="#hotel" className="hover:text-blue-500 p-2">Sponsor</a></li>
                     <li><a href="#contact" className="hover:text-blue-500 p-2" onClick={() => toggleMobileMenu()}>Contact</a></li>
                     <li><a target='_blank' rel="noreferrer" href="https://www.visitsingapore.com/" className="hover:text-blue-500">Visit Singapore</a></li>
                 </ul>

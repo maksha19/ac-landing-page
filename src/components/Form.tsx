@@ -100,7 +100,7 @@ const Form = () => {
                             Please complete the questions below and make full payment via bank transfer to Toastmasters International Singapore Ltd. A confirmation receipt will be sent within 5 working days upon successful payment. For more details, Contact us<span className="text-red-600">*</span> <br /><br />
                         </label>
                         <label>
-                            <b>Annual Conference Fee:  S$288 per person</b> (Regular price: S$520) Offer valid until 30 November 2024 or until sold out. <b />
+                            <b>Annual Conference Fee:  S$288 per person</b> (Regular price: S$520) Offer valid until sold out. <b />
 
                             For overseas bank transfers: <br /> <br />
 
@@ -178,7 +178,7 @@ const Form = () => {
 
                             <b>Fee Information:</b><br /><br />
 
-                            <b>Group Fee: S$288 per person </b> (regular price: S$520 per person) Offer valid until 30 November 2024, or until sold out.<span className="text-red-600">*</span>
+                            <b>Group Fee: S$288 per person </b> (regular price: S$520 per person) Offer valid until sold out.<span className="text-red-600">*</span>
                         </label>
                         <input
                             type="text"
@@ -245,13 +245,13 @@ const Form = () => {
                     <div className="flex flex-col">
                         <label htmlFor="paymentDetails" className="text-sm font-medium text-gray-700">
                             <b>To complete your registration, please enter the amount, make the payment, and upload the payment receipt.</b><br /><br />
-                            <b>Individual Fee: S$288 per person </b> (regular price: S$520 per person) Offer valid until 30 November 2024, or until sold out.<br /><br />
+                            <b>Individual Fee: S$288 per person </b> (regular price: S$520 per person) Offer valid until sold out.<br /><br />
                             <b>Important:</b> All fees are non-refundable. <br /><br />
                             By completing registration, you agree to our general indemnity policy,
                             absolving the organisers of liability for any damages or losses during the event.<br /><br />
                         </label>
                         <div className="flex flex-col items-center justify-center p-6 bg-gray-100 border border-gray-300 rounded-lg shadow-md w-full max-w-md mx-auto">
-                            <h2 className="text-lg font-semibold text-gray-700 mb-4">Upload Your File</h2>
+                            <h2 className="text-lg font-semibold text-gray-700 mb-4">Upload your payment screenshot</h2>
                             <label
                                 htmlFor="file-upload"
                                 className="cursor-pointer flex flex-col items-center bg-blue-500 text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
