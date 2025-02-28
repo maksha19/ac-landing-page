@@ -97,18 +97,10 @@ const Form = () => {
                 >
                     <div className="flex flex-col">
                         <label htmlFor="fullName" className="text-sm font-medium text-gray-700">
-                            Please complete the questions below and make full payment via bank transfer to Toastmasters International Singapore Ltd. A confirmation receipt will be sent within 5 working days upon successful payment. For more details, Contact us<span className="text-red-600">*</span> <br /><br />
+                            Please complete the questions below and make full payment using the attached Credit Card Authorization Form. A confirmation receipt will be sent within 5 working days upon successful payment. For more details, Contact us<span className="text-red-600">*</span> <br /><br />
                         </label>
                         <label>
                             <b>Annual Conference Fee:  S$288 per person</b> (Regular price: S$520) Offer valid until sold out. <b />
-
-                            For overseas bank transfers: <br /> <br />
-
-                            <b>Bank Name:</b> DBS Bank Ltd <br />
-                            <b>SWIFT Code:</b> DBSSSGSGXXX <br />
-                            <b>Bank Address:</b> 12 Marina Boulevard, Marina Bay Financial Centre <br />
-                            <b>Account Name:</b> Toastmasters International Singapore Limited <br />
-                            <b>Account Number:</b>00393578 <br />
                             <hr className="my-4 border-t-2 border-gray-300" />
                         </label>
                     </div>

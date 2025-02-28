@@ -24,14 +24,12 @@ const Agenda = () => {
                         <h3 className="text-2xl font-bold mb-4 text-center">10th May 2025</h3>
                         <p className="text-lg uppercase text-center">Saturday</p>
                         <div className="flex flex-col mt-3 space-y-6">
-                            <div className="bg-blue-100 p-2 rounded">Light Breakfast</div>
                             <div className="bg-yellow-100 p-2 rounded">Opening ceremony</div>
                             <div className="bg-blue-100 p-2 rounded">Keynote Speech by Verity Price</div>
-                            <div className="bg-yellow-100 p-2 rounded">English Education workshop /<br />Tamil Workshop /<br />Mandarin contests</div>
-                            <div className="bg-blue-100 p-2 rounded">Lunch</div>
-                            <div className="bg-yellow-100 p-2 rounded">English Table topic and Evaluation Contests</div>
-                            <div className="bg-blue-100 p-2 rounded">Masterclass by Verity Price</div>
-                            <div className="bg-yellow-100 p-2 rounded">Gala dinner</div>
+                            <div className="bg-yellow-100 p-2 rounded">Lunch</div>
+                            <div className="bg-blue-100 p-2 rounded">English/Mandarin/Tamil Education Workshops</div>
+                            <div className="bg-yellow-100 p-2 rounded">English & Mandarin Contests</div>
+                            <div className="bg-blue-100 p-2 rounded">Gala dinner</div>
                         </div>
                     </div>
                     <div className="flex flex-col pb-4 mb-4  border-gray-300">
@@ -39,8 +37,9 @@ const Agenda = () => {
                         <p className="text-lg uppercase text-center">Sunday</p>
                         <div className="flex flex-col mt-3 space-y-6">
                             <div className="bg-yellow-100 p-2 rounded">Light Breakfast</div>
-                            <div className="bg-blue-100 p-2 rounded">English International Speech Contest</div>
-                            <div className="bg-yellow-100 p-2 rounded">Closing Ceremony with Lunch</div>
+                            <div className="bg-blue-100 p-2 rounded">Masterclass by Verity Price</div>
+                            <div className="bg-yellow-100 p-2 rounded">English International Speech Contest</div>
+                            <div className="bg-blue-100 p-2 rounded">Closing Ceremony with Lunch</div>
                         </div>
                     </div>
                 </div>
