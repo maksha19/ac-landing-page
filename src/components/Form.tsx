@@ -99,6 +99,12 @@ const Form = () => {
                         <label htmlFor="fullName" className="text-sm font-medium text-gray-700">
                             Please complete the questions below and make full payment using the attached Credit Card Authorization Form. A confirmation receipt will be sent within 5 working days upon successful payment. For more details, Contact us<span className="text-red-600">*</span> <br /><br />
                         </label>
+                        <div className='my-4 mt-0'>
+                            <a href="/pdf/CC-Form-Toastmasters.pdf" className=" mb-4" target="_blank" rel="noopener noreferrer" download="CC-Form-Toastmasters.pdf">
+                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded">Credit Card Authorization Form</button>
+                            </a>
+                            <p className='mt-1'>Send it to michelle.thong@one15marina.com</p>
+                        </div>
                         <label>
                             <b>Annual Conference Fee:  S$288 per person</b> (Regular price: S$520) Offer valid until sold out. <b />
                             <hr className="my-4 border-t-2 border-gray-300" />

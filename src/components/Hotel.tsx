@@ -14,6 +14,9 @@ const Hotel = () => {
                     <a href="https://one15marina.com/hotel/overview/" className="mt-4" target="_blank" rel="noopener noreferrer">
                         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded">Open Website</button>
                     </a>
+                    <a href="/pdf/Hotel-Room-Reservation-Form-Toastmasters.pdf" className="mt-4 md:pl-4" target="_blank" rel="noopener noreferrer" download="Hotel-Room-Reservation-Form.pdf">
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded">Reservation Form</button>
+                    </a>
                 </div>
                 <div className="lg:ml-48">
                     <h2 className="text-2xl flex  uppercase font-bold mb-4">Faber Park</h2>
