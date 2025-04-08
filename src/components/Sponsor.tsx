@@ -13,20 +13,20 @@ const Sponsor = () => {
                 className=" mb-8 font-bold text-3xl md:text-5xl uppercase w-full text-center p-1 ">
                 OUR SPONSORS
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center md:space-x-20 space-y-4">
-                <div className='flex flex-col items-center justify-center px-6 bg-[#dbeafe] rounded-lg shadow-lg'>
+            <div className="flex flex-col md:flex-row items-center justify-center md:space-x-20 space-y-4 ">
+                <div className='flex flex-col items-center justify-center md:px-6 bg-[#dbeafe] rounded-lg shadow-lg px-12'>
                     <div style={{ fontFamily: "Franklin" }} className='text-xl mt-8'>Supported by:</div>
                     <div>
                         <img src={passionMade} alt={"Passion Made Possible"} className="w-36 h-36 md:w-48 md:h-48 object-contain" />
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center px-6 bg-[#dbeafe] rounded-lg shadow-lg '>
+                <div className='flex flex-col items-center justify-center md:px-6 bg-[#dbeafe] rounded-lg shadow-lg px-12 '>
                     <div style={{ fontFamily: "Franklin" }} className='text-xl mt-8'>Diamond Sponsor:</div>
                     <div>
                         <img src={firstCom} alt={"FirstCom Acedemy"} className="w-36 h-36 md:w-48 md:h-48 object-contain" />
                     </div>
                 </div>
-                <div className='flex flex-col items-center justify-center px-6 bg-[#dbeafe] rounded-lg shadow-lg '>
+                <div className='flex flex-col items-center justify-center md:px-6 bg-[#dbeafe] rounded-lg shadow-lg px-12 '>
                     <div style={{ fontFamily: "Franklin" }} className='text-xl mt-8'>Gold Sponsor:</div>
                     <div>
                         <img src={rt} alt={"RT One"} className="w-36 h-36 md:w-48 md:h-48 object-contain" />
