@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from "axios";
+import ac_menu_eng from "../images/ac_menu_eng.jpeg";
+import ac_menu_ch from "../images/ac_menu_ch.jpeg";
 
 const Form = () => {
     // State to store form values
@@ -385,6 +387,10 @@ const Form = () => {
                     </div>
                 </div>
             )}
+            <div className='flex md:flex-row flex-col items-center p-2 '>
+                <img src={ac_menu_eng} alt={"Passion Made Possible"} className="w-1/2 h-72 mb-4 md:w-2/4 md:h-1/2 md:p-10  " />
+                <img src={ac_menu_ch} alt={"Passion Made Possible"} className="w-1/2 h-72 md:w-2/4 md:h-1/2 md:p-10  " />
+            </div>
         </div>
     );
 };
